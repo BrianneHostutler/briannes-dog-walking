@@ -19,6 +19,17 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/img/big-dog.jpg": {
+		"ft": 16384,
+		"iS": 169623,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/big-dog.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/js/app.js": {
 		"bF": 0,
 		"ft": 64,
