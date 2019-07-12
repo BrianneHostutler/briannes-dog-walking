@@ -131,9 +131,14 @@ p, li, a {
 	display: flex;
   	justify-content: center;
   	align-items: center;
-
 	h1, p {
 		color:$white;
+	}
+	h1 {
+		line-height: 1.2;
+	}
+	p {
+		font-size: rem-calc(22);
 	}
 	.btn {
 		margin-bottom: 1rem;
