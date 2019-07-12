@@ -64,6 +64,11 @@
 // @include motion-ui-animations;
 
 
+/* COLORS
+---------------------------------*/
+
+$blue:#4DB6E0;
+
 /* TYPOGRAPHY
 ---------------------------------*/
 
@@ -74,19 +79,44 @@ $open-sans: 'Open Sans', sans-serif;
 h1, h2, h3, h4, h5, h6 {
     font-style: normal;
 }
-h1 {
+h1, h2, h3 {
 	font-weight: 800;
+	text-transform: uppercase;
+	font-family: $raleway;
+	text-align: center;
 }
-
+h2, h3 {
+	color:$dark-gray;
+}
 
 p, li, a {
 	font-weight: 400;
     font-style: normal;
+    color:$dark-gray;
+    font-family: $open-sans;
 }
 
-
-/* COLORS
+/* BUTTONS AND LINKS
 ---------------------------------*/
+
+.btn {
+	text-transform: uppercase;
+	font-family: $raleway;
+	font-weight:600;
+	color:$black;
+	background-color:#4DB6E0;
+	padding:.5rem 3rem;
+	display: inline-block;
+	margin:0 auto;
+	transition: .3s all;
+}
+.btn:visited {
+	color:$black;
+}
+.btn:hover {
+	color:$black;
+	background-color: lighten($blue,10%);
+}
 
 
 /* HOMEPAGE
@@ -94,9 +124,64 @@ p, li, a {
 
 .intro {
 	text-align: center;
-	  background-image: url('../img/big-dog.jpg');
+	background-image: url('../img/big-dog.jpg');
+	background-size: cover;
+	height: 650px;
+	position: relative;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+
+	h1, p {
+		color:$white;
+	}
+	.btn {
+		margin-bottom: 1rem;
+	}
+}
+.intro:after {
+	background-color:rgba(10,10,10,0.55);
 }
 
+
+.about,
+.services {
+	padding:2rem 0;
+}
+
+.about {
+	text-align: center;
+}
+
+
+.services {
+	background-color: $light-gray;
+	.card {
+		margin-top: 1rem;
+		text-align: center;
+		background-color:$white;
+		padding:1rem 6rem;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+	    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+	    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+	    -webkit-transition: all 100ms ease-out 0s;
+	    transition: all 100ms ease-out 0s;
+	}
+	.btn-wrapper {
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+	}
+}
+
+footer {
+	background-color:$dark-gray;
+	text-align: center;
+	padding: 2rem 0;
+	p {
+		color:$white;
+		margin-bottom: 0;
+	}
+}
 
 /* MEDIA QUERIES
 ---------------------------------*/
